@@ -6,25 +6,19 @@ import Card from "react-bootstrap/Card";
 const Hero = () => {
   return (
     <div className="hero container">
-      {/* left */}
-      <div className="container">
-        <img className="pastas" src={pastas} alt="pastas"></img>
-      </div>
-      {/* right */}
       <div className="hero-left">
-        {/* top */}
+        <img className="pastas" src={pastas} alt="pastas"></img>{" "}
+      </div>
+      <div className="twoCard ">
         <div className="bg-card1">
           <Card className="my-card">
             <Card.Body>
               <Card.Title>
-                {" "}
                 <div className="wrapping">
-                  {" "}
                   <i class="fa-solid fa-truck"></i> Delivery Deals
                   <h3>3 LARGE VALUE PIZZAS</h3>
                 </div>
               </Card.Title>
-
               <h4 className="h4 ">UPGRADE TO PASTAS FROM $2*</h4>
               <h2 className="h4 ">From $27*</h2>
               <Button variant="primary">START AN ORDER</Button>
@@ -32,12 +26,10 @@ const Hero = () => {
             </Card.Body>
           </Card>
         </div>
-        {/* botom */}
-        <div className="bg-card2 mt-1">
+        <div className="bg-card2">
           <Card className="my-card2">
             <Card.Body>
               <div className="wrapping">
-                {" "}
                 <i class="fa-solid fa-truck"></i> Pick-Up Deals
                 <h3>3 LARGE VALUE PIZZAS</h3>
               </div>

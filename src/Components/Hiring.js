@@ -8,7 +8,7 @@ import samir from "../Img/samir.png";
 const Hiring = () => {
   return (
     <div className="hiring container-fluid mt-2">
-      <Card className="card2" style={{ width: "18rem" }}>
+      <Card className="card1">
         <Card.Img className="hiring-img" variant="top" src={hiring} />
         <Card.Body>
           <Card.Title>Wanna Pizza the Action?</Card.Title>
@@ -16,7 +16,7 @@ const Hiring = () => {
         </Card.Body>
         <Button variant="primary"> Find Out More</Button>
       </Card>
-      <Card className="card1" style={{ width: "18rem" }}>
+      <Card className="card3">
         <Card.Img variant="top" src={logo} />
         <Card.Body>
           <Card.Text>
@@ -31,9 +31,12 @@ const Hiring = () => {
           Find Out More
         </Button>
       </Card>
-      <Card className="card3" style={{ width: "18rem" }}>
+      <Card className="card2">
         <Card.Img className="hiring-img1" variant="top" src={samir} />
-        <Button variant="primary"> Find Out More</Button>
+        <Button className="btn" variant="primary">
+          {" "}
+          Find Out More
+        </Button>
       </Card>
     </div>
   );
