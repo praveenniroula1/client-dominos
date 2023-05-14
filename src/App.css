@@ -171,7 +171,9 @@
     /* margin-top: -1rem; */
     height: fit-content;
   }
-
+  .bg-card1 {
+    margin-top: 2rem !important;
+  }
   .hero-left {
     width: 100%;
     margin-bottom: 1rem;
@@ -348,6 +350,6 @@ ul i {
     background-color: black;
     border-radius: 1rem;
     color: white;
-    min-height: 10vh;
+    min-height: 11vh;
   }
 }
