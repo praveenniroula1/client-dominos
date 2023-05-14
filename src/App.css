@@ -187,8 +187,8 @@
     object-position: center;
     position: relative;
     top: -4rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
   }
   .card-container {
     width: fit-content;
