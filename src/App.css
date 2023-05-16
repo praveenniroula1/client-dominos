@@ -164,7 +164,7 @@
   border-radius: 1rem 0rem 0rem 1rem;
   color: white;
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 430px) {
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -353,4 +353,124 @@ ul i {
     color: white;
     min-height: 11vh;
   }
+}
+
+/* delivery form */
+.deliveryForm {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: auto;
+  width: 30%;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem black;
+  border: 1px solid rgba(0, 0, 0, 0.221);
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "item6 item6 item6 item6"
+    "item1 item1 item2 item2"
+    "item3 item3 item3 item3"
+    "item4 item4 item5 item5"
+    "item7 item7 item7 item7";
+}
+@media screen and (max-width: 767px) {
+  .deliveryForm {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.2rem 0.3rem black;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "item6 item6 item6 item6"
+      "item1 item1 item2 item2"
+      "item3 item3 item3 item3"
+      "item4 item4 item5 item5"
+      "item7 item7 item7 item7";
+  }
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item7;
+}
+.item1 .form-control,
+.item2 .form-control,
+.item3 .form-control,
+.item4 .form-control,
+.item5 .form-control {
+  border-radius: 0;
+  background-color: rgba(10, 9, 9, 0.165);
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  border: none;
+  border-bottom: 2px solid black;
+}
+.item1 .form-control::placeholder,
+.item2 .form-control::placeholder,
+.item3 .form-control::placeholder,
+.item4 .form-control::placeholder,
+.item5 .form-control::placeholder {
+  color: #060606;
+  font-weight: bold;
+}
+.homee {
+  position: relative;
+  top: 1rem;
+  border: 2px solid rgb(12, 12, 12);
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.store {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #06060630;
+  width: 135%;
+  font-weight: bold;
+}
+.open {
+  margin-left: 3.8rem;
+  font-weight: bold;
+}
+.start {
+  width: 100%;
+}
+
+.line {
+  border: 2px solid rgb(4, 0, 0);
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.cards {
+  overflow: hidden;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
 }

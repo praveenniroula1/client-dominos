@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../Img/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -16,11 +17,12 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
-                className="fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4"
+                to="/Menu"
+                className=" fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4"
               >
-                MENU
+                MENUU
               </Nav.Link>
+
               <Nav.Link
                 href="#"
                 className="fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4 d-flex flex-row-reverse justify-content-end align-items-center"
