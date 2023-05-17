@@ -1,7 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useNavigate } from "react-router-dom";
 const AddToCart = () => {
+  const navigate = useNavigate();
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    navigate("/Payment");
+  };
   return (
     <div>
       <Form className="deliveryForm ">
@@ -56,7 +62,11 @@ const AddToCart = () => {
           <div className="text-end mt-5">Total: $xxx.xx</div>
         </div>
 
-        <Button className="start item7" variant="success">
+        <Button
+          onClick={handleOnSubmit}
+          className="start item7"
+          variant="success"
+        >
           Place Order
         </Button>
       </Form>

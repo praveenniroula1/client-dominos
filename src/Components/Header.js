@@ -10,19 +10,18 @@ const Header = () => {
     <div>
       <Navbar bg="light" variant="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img className="logo" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
+              <Link
                 to="/Menu"
-                className=" fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4"
+                className="nav-link fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4"
               >
-                MENUU
-              </Nav.Link>
-
+                MENU
+              </Link>
               <Nav.Link
                 href="#"
                 className="fw-bold text-dark fs-4 mt-4 mx-3 mx-lg-4 d-flex flex-row-reverse justify-content-end align-items-center"

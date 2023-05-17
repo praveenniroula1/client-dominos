@@ -3,8 +3,16 @@ import Header from "../Components/Header";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import bg1 from "../Img/bg1.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const MenuItem = () => {
+  const navigate = useNavigate();
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    navigate("/AddToCart");
+    window.scroll(0, 0);
+  };
   return (
     <div className="cards d-flex justify-content-center align-items-center flex-wrap ">
       <Card
@@ -23,8 +31,10 @@ const MenuItem = () => {
             A flavoursome pairing of seasoned chicken pieces, tomato, sliced red
             onion & baby spinach, topped with our addictive peri peri sauce
           </Card.Text>
-        </Card.Body>
-        <Button variant="danger">Order Now</Button>
+        </Card.Body>{" "}
+        <Button onClick={handleOnSubmit} className="button" variant="danger">
+          Order Now
+        </Button>
       </Card>
       <Card
         style={{
@@ -43,7 +53,10 @@ const MenuItem = () => {
             onion & baby spinach, topped with our addictive peri peri sauce
           </Card.Text>
         </Card.Body>
-        <Button variant="danger">Order Now</Button>
+
+        <Button onClick={handleOnSubmit} variant="danger">
+          Order Now
+        </Button>
       </Card>
       <Card
         style={{
@@ -62,7 +75,9 @@ const MenuItem = () => {
             onion & baby spinach, topped with our addictive peri peri sauce
           </Card.Text>
         </Card.Body>
-        <Button variant="danger">Order Now</Button>
+        <Button onClick={handleOnSubmit} variant="danger">
+          Order Now
+        </Button>
       </Card>
       <Card
         style={{
@@ -81,7 +96,9 @@ const MenuItem = () => {
             onion & baby spinach, topped with our addictive peri peri sauce
           </Card.Text>
         </Card.Body>
-        <Button variant="danger">Order Now</Button>
+        <Button onClick={handleOnSubmit} variant="danger">
+          Order Now
+        </Button>
       </Card>
     </div>
   );

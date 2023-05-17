@@ -34,19 +34,6 @@ const DeliveryPage = () => {
         {" "}
         Order ID: e9de452d-91ff-4849-bf1d-e13053ef9801{" "}
       </div>
-
-      {/* pickup */}
-      <Form className="deliveryForm ">
-        <h4 className="item6">Select Pickup Store:</h4>
-        <div className="store ">
-          <i class="homee fa-solid fa-home  fs-1 "></i> Domino's Adelaide{" "}
-          <br></br>
-          <div className="open">Currently Open</div>
-          <Button className="start item7 mt-3" variant="success">
-            Start Order
-          </Button>
-        </div>
-      </Form>
     </div>
   );
 };
