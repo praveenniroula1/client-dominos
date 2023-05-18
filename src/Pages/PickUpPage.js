@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Footer from "../Components/Footer";
 
 const PickUpPage = () => {
   return (
@@ -17,6 +18,7 @@ const PickUpPage = () => {
           </Button>
         </div>
       </Form>
+      <Footer />
     </div>
   );
 };
